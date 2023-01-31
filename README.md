@@ -30,6 +30,8 @@ The following sections provide more in-depth documentation:
 
 [Getting started](docs/GettingStarted.md)
 
+[Run a custom application in CantripOS](docs/RunApp.md)
+
 [CantripOS software organization](docs/SourceCrates.md)
 
 [Target architecture dependcies](docs/ArchitectureDependencies.md)
