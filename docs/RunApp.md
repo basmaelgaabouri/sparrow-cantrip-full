@@ -8,3 +8,9 @@ builtins
 install hello.app
 start hello
 ```
+
+Run: 
+```sh
+m clean 
+m simulate-debug
+```
