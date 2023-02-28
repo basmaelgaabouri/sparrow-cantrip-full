@@ -16,7 +16,7 @@
 
 members = [
     "libcantrip",
-
+    "test",
     "hello",
     "fibonacci",
     "keyval",

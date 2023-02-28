@@ -12,18 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-[package]
-name = "logtest"
-version = "0.1.0"
-edition = "2021"
+APPNAME := hello
 
-[lib]
-name = "logtest"
-path = "logtest.rs"
-crate-type = ["staticlib"]
-
-[dependencies]
-cantrip-os-common = { path = "../../system/components/cantrip-os-common", default-features = false }
-libcantrip = { path = "../libcantrip" }
-log = { version = "0.4", features = ["release_max_level_info"] }
-sdk-interface = { path = "../../system/components/SDKRuntime/sdk-interface" }
+LIBCANTRIP ?= ../libcantrip
+include ${LIBCANTRIP}/make/app.mk

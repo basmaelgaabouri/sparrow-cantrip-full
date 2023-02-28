@@ -215,7 +215,7 @@ pub fn repl_eof<T: io::BufRead>(output: &mut dyn io::Write, input: &mut T, built
     let mut line_reader = LineReader::new();
     loop {
         // NB: LineReader echo's input
-        let _ = write!(output, "CANTRIP> ");
+        let _ = write!(output, "CANTRIP> ");       
         if let Ok(cmdline) = line_reader.read_line(output, input) {
             eval(cmdline, &cmds, output, input, builtin_cpio);
         } else {

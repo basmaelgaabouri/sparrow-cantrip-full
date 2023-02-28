@@ -1,10 +1,2 @@
-builtins
 install hello.app
 start hello
-[hello]::hello::ping!
-install logtest.app
-start logtest
-[logtest]::logtest::ping!
-install fibonacci.app
-start fibonacci
-[fibonacci]::fibonacci::[ 3]
